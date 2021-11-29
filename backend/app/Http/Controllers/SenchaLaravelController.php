@@ -43,4 +43,5 @@ class SenchaLaravelController extends Controller
         return redirect()->back();
     }
 
+
 }

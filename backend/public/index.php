@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\SenchaLaravel;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 

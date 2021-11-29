@@ -22,13 +22,30 @@ Ext.define('SenchaLaravel.view.main.MainController', {
         formPeople.show();
 
     },
-    onRead: function() {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
+    onRead: function(btn) {
+        var grid = btn.up('ingrid');
+        var record = grid.getSelection()[0];
+        if (!record) {
+            alert('Please select a record');
+            return;
+        }
+        var form = Ext.create('SenchaLaravel.view.main.FormPeople');
+        form.loadRecord(record);
+        form.show();
+
 
     },
 
-    onUpdate: function() {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
+    onUpdate: function(btn) {
+        var grid = btn.up('ingrid');
+        var record = grid.getSelection()[0];
+        if (!record) {
+            alert('Please select a record');
+            return;
+        }
+        var form = Ext.create('SenchaLaravel.view.main.FormPeople');
+        form.updateRecord(record);
+        form.show();
 
     },
 

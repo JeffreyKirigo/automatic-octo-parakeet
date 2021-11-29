@@ -8,7 +8,10 @@ Ext.define('SenchaLaravel.view.main.Crud', {
         type: 'crud'
     },
 
-
+    layout: {
+        type: 'vbox',
+        align: 'stretch'
+    },
     columns: [
         { text: 'Serial_No', dataIndex: 'id' },
         { text: 'Name', dataIndex: 'Name', flex: 1 },

@@ -17,7 +17,10 @@ Ext.define('SenchaLaravel.view.main.FormPeople', {
 
 
     bbar: [{
-            text: 'Submit'
+            text: 'Submit',
+            handler: function() {
+
+            }
 
         }, {
             text: 'Cancel'
@@ -29,14 +32,17 @@ Ext.define('SenchaLaravel.view.main.FormPeople', {
 
             fieldLabel: 'Name',
             emptyText: 'Name',
+            name: 'Name'
         }, {
 
             fieldLabel: 'Age',
-            emptyText: '20'
+            emptyText: '20',
+            name: 'Age'
         }, {
 
             fieldLabel: 'Company',
-            emptyText: 'Softclans'
+            emptyText: 'Softclans',
+            name: 'Company'
         },
 
     ]

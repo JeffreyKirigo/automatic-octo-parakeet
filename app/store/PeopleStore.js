@@ -6,6 +6,6 @@ Ext.define('SenchaLaravel.store.PeopleStore', {
 
     proxy: {
         type: 'ajax',
-        url: 'http://localhost/SenchaLaravel/SenchaLaravelController/',
+        url: '/PostController/Read',
     }
 });
