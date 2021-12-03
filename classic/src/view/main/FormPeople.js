@@ -7,6 +7,7 @@ Ext.define('SenchaLaravel.view.main.FormPeople', {
     closable: true,
     modal: true,
     height: 300,
+    scrollable: true,
 
 
     defaults: {
@@ -18,9 +19,7 @@ Ext.define('SenchaLaravel.view.main.FormPeople', {
 
     bbar: [{
             text: 'Submit',
-            handler: function() {
-
-            }
+            handler: function() {}
 
         }, {
             text: 'Cancel'
@@ -32,17 +31,23 @@ Ext.define('SenchaLaravel.view.main.FormPeople', {
 
             fieldLabel: 'Name',
             emptyText: 'Name',
-            name: 'Name'
+            name: 'user_name'
         }, {
 
             fieldLabel: 'Age',
             emptyText: '20',
-            name: 'Age'
+            name: 'age'
         }, {
 
             fieldLabel: 'Company',
             emptyText: 'Softclans',
-            name: 'Company'
+            name: 'company'
+        },
+        {
+
+            fieldLabel: 'Gender',
+            emptyText: 'Gender',
+            name: 'gender'
         },
 
     ]

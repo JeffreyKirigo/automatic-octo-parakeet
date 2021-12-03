@@ -14,9 +14,12 @@ Ext.define('SenchaLaravel.view.main.Crud', {
     },
     columns: [
         { text: 'Serial_No', dataIndex: 'id' },
-        { text: 'Name', dataIndex: 'Name', flex: 1 },
-        { text: 'Age', dataIndex: 'Age', flex: 1 },
-        { text: 'Company', dataIndex: 'Company', flex: 1 },
+        { text: 'Name', dataIndex: 'user_name', flex: 1 },
+        { text: 'Age', dataIndex: 'age', flex: 1 },
+        { text: 'Company', dataIndex: 'company', flex: 1 },
+        { text: 'Gender', dataIndex: 'gender', flex: 1 },
+
+
     ],
 
     tbar: [{

@@ -17,3 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('personnel', [PersonnelController::class,'fetchData']);
+Route::delete('delete/{id}',[PersonnelController::class,'delete']);
+Route::post('create', [PersonnelController::class,'addData']);
+Route::post('update/{id}',[PersonnelController::class,'update']);
