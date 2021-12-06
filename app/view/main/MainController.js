@@ -54,18 +54,5 @@ Ext.define('SenchaLaravel.view.main.MainController', {
         Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
 
     },
-    onLoad: function() {
-        Ext.Ajax.request({
-            url: 'http://127.0.0.1:8000/personnel',
 
-            success: function(response, opts) {
-                var obj = Ext.decode(response.responseText);
-                console.log(obj);
-            },
-
-            failure: function(response, opts) {
-                console.log('server-side failure with status code ' + response.status);
-            }
-        });
-    }
 });

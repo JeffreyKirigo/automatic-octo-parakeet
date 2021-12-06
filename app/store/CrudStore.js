@@ -24,8 +24,4 @@ Ext.define('SenchaLaravel.store.CrudStore', {
         }
     }
 
-    // proxy: {
-    //     type: 'ajax',
-    //     url: 'http://localhost/SenchaLaravel/SenchaLaravelController/',
-    // }
 });
