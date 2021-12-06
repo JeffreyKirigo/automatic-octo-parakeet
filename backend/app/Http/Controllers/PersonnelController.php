@@ -38,7 +38,8 @@ class PersonnelController extends Controller
         }
 
         //Delete data from db
-        function delete($id){
+        function delete(Request $request){
+            $id = $request->id;
             $data=Personnel::find($id);
             $data->delete();
 

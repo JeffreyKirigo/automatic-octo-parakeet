@@ -4,16 +4,22 @@ Ext.define('SenchaLaravel.view.main.Crud', {
     alias: 'widget.ingrid',
 
     title: 'Ingrid',
+    collapsible: true,
+    columnLines: true,
+    height: 670,
+
     store: {
         type: 'crud'
     },
 
-    layout: {
-        type: 'vbox',
-        align: 'stretch'
+    selModel: {
+        type: 'checkboxmodel'
     },
+
+
     columns: [
-        { text: 'Serial_No', dataIndex: 'id' },
+
+        { text: 'Serial_No', xtype: 'rownumberer' },
         { text: 'Name', dataIndex: 'user_name', flex: 1 },
         { text: 'Age', dataIndex: 'age', flex: 1 },
         { text: 'Company', dataIndex: 'company', flex: 1 },
