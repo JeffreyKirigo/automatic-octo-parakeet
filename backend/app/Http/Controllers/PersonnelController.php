@@ -16,7 +16,7 @@ class PersonnelController extends Controller
             $data->company = $request->company;
             $data->gender = $request->gender;
             $data->save();
-            return redirect('personnel');
+
         }
 
         //Read/Get data from db
@@ -33,7 +33,8 @@ class PersonnelController extends Controller
             $data->company = $request->company;
             $data->gender = $request->gender;
             $data->save();
-            return redirect('personnel');
+
+            //return redirect('personnel');
 
         }
 

@@ -1,6 +1,8 @@
 Ext.define('SenchaLaravel.store.CrudStore', {
     extend: 'Ext.data.Store',
     alias: 'store.crud',
+    xtype: 'crud',
+    storeId: 'crud',
     model: 'SenchaLaravel.model.Personnel',
     autoLoad: false,
     proxy: {

@@ -19,4 +19,4 @@ Route::get('/', function () {
 Route::get('personnel', [PersonnelController::class,'fetchData']);
 Route::post('delete',[PersonnelController::class,'delete']);
 Route::post('create', [PersonnelController::class,'addData']);
-Route::post('update/{id}',[PersonnelController::class,'update']);
+Route::post('update',[PersonnelController::class,'update']);

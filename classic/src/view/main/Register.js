@@ -1,6 +1,6 @@
-Ext.define('SenchaLaravel.view.main.FormPeople', {
+Ext.define('SenchaLaravel.view.main.Register', {
     extend: 'Ext.form.Panel',
-    alias: 'widget.formPeople',
+    alias: 'widget.register',
 
     controller: 'main',
 
@@ -52,13 +52,13 @@ Ext.define('SenchaLaravel.view.main.FormPeople', {
                 xtype: 'button',
                 text: 'Submit',
                 iconCls: 'x-fa fa-check',
-                handler: 'onUpdate'
+                handler: 'onCreate'
             }, {
                 xtype: 'button',
                 text: 'Cancel',
                 iconCls: 'x-fa fa-close',
                 handler: function() {
-                    this.up('formPeople').destroy();
+                    this.up('register').destroy();
                 }
             }]
         }
