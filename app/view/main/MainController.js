@@ -9,7 +9,7 @@ Ext.define("SenchaLaravel.view.main.MainController", {
 
     //create new record
     onCreate: function(btn) {
-        var form = btn.up("register");
+        var form = btn.up('insert');
         form.submit({
             method: "POST",
             url: "http://127.0.0.1:8000/create/",

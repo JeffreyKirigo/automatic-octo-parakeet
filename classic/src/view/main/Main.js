@@ -15,8 +15,6 @@ Ext.define('SenchaLaravel.view.main.Main', {
 
         'SenchaLaravel.view.main.MainController',
         'SenchaLaravel.view.main.MainModel',
-        'SenchaLaravel.view.main.List',
-        // 'SenchaLaravel.view.main.Crud'
 
     ],
 
@@ -81,26 +79,25 @@ Ext.define('SenchaLaravel.view.main.Main', {
         title: 'Home',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
-        items: [{
-            xtype: 'mainlist'
-        }]
+
     }, {
         title: 'Users',
         iconCls: 'fa-user',
         items: [{
-            xtype: 'ingrid'
+            xtype: 'ingrid',
+
         }]
     }, {
         title: 'Groups',
         iconCls: 'fa-users',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        items: [{
+            xtype: 'ingrid'
+        }]
     }, {
         title: 'Settings',
         iconCls: 'fa-cog',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        items: [{
+            xtype: 'ingrid'
+        }]
     }]
 });

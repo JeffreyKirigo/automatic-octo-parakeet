@@ -1,6 +1,6 @@
-Ext.define('SenchaLaravel.view.main.Register', {
+Ext.define('SenchaLaravel.view.main.Insert', {
     extend: 'Ext.form.Panel',
-    alias: 'widget.register',
+    alias: 'widget.insert',
 
     controller: 'main',
 
@@ -21,11 +21,6 @@ Ext.define('SenchaLaravel.view.main.Register', {
     },
 
     items: [{
-            fieldLabel: 'ID',
-            emptyText: 'id',
-            name: 'id',
-            hidden: true
-        }, {
 
             fieldLabel: 'Name',
             emptyText: 'Name',

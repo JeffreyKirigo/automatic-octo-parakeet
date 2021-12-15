@@ -3,7 +3,7 @@ Ext.define('SenchaLaravel.store.CrudStore', {
     alias: 'store.crud',
     xtype: 'crud',
     storeId: 'crud',
-    model: 'SenchaLaravel.model.Personnel',
+    model: 'SenchaLaravel.model.PeopleModel',
     autoLoad: false,
     proxy: {
         type: 'ajax',

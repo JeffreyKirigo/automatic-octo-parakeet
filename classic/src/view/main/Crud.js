@@ -32,7 +32,7 @@ Ext.define("SenchaLaravel.view.main.Crud", {
     bbar: [{
             text: "Create",
             handler: function() {
-                var register = Ext.create("SenchaLaravel.view.main.Register");
+                var register = Ext.create("SenchaLaravel.view.main.Insert");
                 register.show();
             },
         },

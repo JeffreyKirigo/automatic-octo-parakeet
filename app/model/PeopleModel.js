@@ -6,6 +6,7 @@ Ext.define('SenchaLaravel.model.PeopleModel', {
         'name',
         'age',
         'company',
+        'gender'
 
     ]
 });
